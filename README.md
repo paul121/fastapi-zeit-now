@@ -9,9 +9,15 @@ This repo deploys the [FastAPI SQL Databases Tutorial] to demonstrate how a Fast
 - OpenAPI Docs: [https://fastapi-zeit-now.paul121.now.sh/docs](https://fastapi-zeit-now.paul121.now.sh/docs)
 - Try the API endpoints [/?name=Name](https://fastapi-zeit-now.paul121.now.sh/?name=Name), [/users](https://fastapi-zeit-now.paul121.now.sh/users), [/items](https://fastapi-zeit-now.paul121.now.sh/items)
 
-This repo contains a sample sqlite database that has a few predefined `users` and `items` to demonstrate returning data
-from a database. **Note** Due to the nature of a serverless deploy, the sqlite file cannot be written to so any 
-*POST requests attempting to modify the DB will fail.* In a production deploy, the FastAPI app would connect to a 
+Notes about this deployment:
+- FastAPI is configured to return a `Cache-Control` header set to `no-cache` for all responses. Because
+static caching is automatic with Zeit, this ensures the Zeit CDN doesn't cache anything for the purposes of this 
+example. More on caching [here](https://zeit.co/docs/v2/network/caching).
+- This repo contains a sample sqlite database that has a few predefined `users` and `items` to demonstrate returning data
+from a database.
+  - **Note** Due to the nature of a serverless deploy, the sqlite file cannot be written to so any 
+*POST requests attempting to modify the DB will fail.*
+  - In a production deploy, the FastAPI app would connect to a 
 database hosted elsewhere.
 
 This is merely an example of integration with Zeit. I'm not currently deploying any FastAPI apps in this way, but would

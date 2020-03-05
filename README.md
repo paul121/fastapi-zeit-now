@@ -71,6 +71,7 @@ configured by adding a `build` configuration to `now.json`:
 [FastAPI]: https://fastapi.tiangolo.com
 [FastAPI SQL Databases Tutorial]:https://fastapi.tiangolo.com/tutorial/sql-databases/#review-all-the-files
 [Zeit]: https://zeit.co
+[Zeit Now]: https://github.com/zeit/now/tree/master/packages/now-cli
 [Asynchronous Server Gateway Interface (ASGI)]: https://zeit.co/docs/runtimes#advanced-usage/advanced-python-usage/asynchronous-server-gateway-interface
 [Zeit Routes]: https://zeit.co/docs/configuration#project/routes
 [Zappa]: https://github.com/Miserlou/Zappa

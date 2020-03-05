@@ -23,6 +23,14 @@ def get_db():
         db.close()
 
 
+@app.get("/")
+def welcome(name=None):
+    if name is not None:
+        return f"Welcome to serverless FastAPI, { name }!"
+
+    return "Welcome to serverless FastAPI!"
+
+
 @app.post("/users/", response_model=schemas.User)
 def create_user(user: schemas.UserCreate, db: Session = Depends(get_db)):
     db_user = crud.get_user_by_email(db, email=user.email)

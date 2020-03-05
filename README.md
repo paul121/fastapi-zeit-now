@@ -5,9 +5,9 @@ Deploy a [FastAPI] app as a [Zeit] Serverless Function.
 This repo deploys the [FastAPI SQL Databases Tutorial] to demonstrate how a FastAPI app can be deployed using the Zeit 
 [Asynchronous Server Gateway Interface (ASGI)].
 
-**_View the live demo at: [https://fastapi-zeit-now.paul121.now.sh/](https://fastapi-zeit-now.paul121.now.sh/)_**
+**_View the live demo at: [https://fastapi-zeit-now.paul121.now.sh/?name=GithubUser](https://fastapi-zeit-now.paul121.now.sh/?name=GithubUser)_**
 - OpenAPI Docs: [https://fastapi-zeit-now.paul121.now.sh/docs](https://fastapi-zeit-now.paul121.now.sh/docs)
-- Try the API endpoints `/?name=Name`, `/users`, `/items`
+- Try the API endpoints [/?name=Name](https://fastapi-zeit-now.paul121.now.sh/?name=Name), [/users](https://fastapi-zeit-now.paul121.now.sh/users), [/items](https://fastapi-zeit-now.paul121.now.sh/items)
 
 This repo contains a sample sqlite database that has a few predefined `users` and `items` to demonstrate returning data
 from a database. **Note** Due to the nature of a serverless deploy, the sqlite file cannot be written to so any 

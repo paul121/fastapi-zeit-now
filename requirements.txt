@@ -1,0 +1,4 @@
+fastapi==0.52.0
+sqlalchemy
+async-exit-stack
+async-generator

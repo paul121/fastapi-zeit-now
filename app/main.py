@@ -6,7 +6,10 @@ from sqlalchemy.orm import Session
 from . import crud, models, schemas
 from .database import SessionLocal, engine
 
-models.Base.metadata.create_all(bind=engine)
+# Because we're providing a sqlite db with data,
+# we don't need to recreate the database file on startup.
+# This simplifies the serverless example.
+# models.Base.metadata.create_all(bind=engine)
 
 app = FastAPI()
 
